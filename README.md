@@ -5,14 +5,14 @@ Agent Systems Research & Architecture | Generative AI R&D | Creative Technologis
 ## Contents
 
 - `index.html` — Personal homepage (GitHub Pages)
-- `Chelsea_Schoonover_Resume_2026_ATS.md` — ATS-optimized resume
-- `Chelsea_Schoonover_Resume_2026.md` — Narrative resume for founders/humans
+- `Chelsea_Schoonover_Resume_2026_ATS.md` ATS-optimized resume
+- `Chelsea_Schoonover_Resume_2026.md` Narrative resume for founders/humans
 
 ## About
 
 This repo hosts my personal site at [glitterstrafe.github.io](https://glitterstrafe.github.io).
 
-I build agentic AI systems for creative workflows — multi-agent orchestration, context engineering, memory-aware systems, and generative pipelines that turn frontier AI capabilities into production-ready tooling.
+I build agentic AI systems for creative workflows, multi-agent orchestration, context engineering, memory-aware systems, and generative pipelines that turn frontier AI capabilities into production-ready tooling.
 
 ## Contact
 
