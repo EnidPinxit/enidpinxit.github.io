@@ -6,7 +6,7 @@ Agent Systems Research & Architecture | Generative AI R&D | Creative Technologis
 
 - `index.html` — Personal homepage (GitHub Pages)
 - `Chelsea_Schoonover_Resume_2026_ATS.md` — ATS-optimized resume
-- `Chelsea_Schoonover_Resume_2026_Final4.md` — Narrative resume for founders/humans
+- `Chelsea_Schoonover_Resume_2026.md` — Narrative resume for founders/humans
 
 ## About
 
