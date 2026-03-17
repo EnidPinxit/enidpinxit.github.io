@@ -2,7 +2,7 @@
 
 **Agentic and Generative AI R&D | Creative Technologist | Co-Founder, Pinxit Labs**
 
-Los Angeles, CA | Chelsea@PinxitLabs.com | linkedin.com/in/chelseajayschoonover | www.midjourney.com/@enidpinxit
+Los Angeles, CA | Chelsea@PinxitLabs.com | www.linkedin.com/in/chelseajayschoonover | www.midjourney.com/@enidpinxit
 
 ---
 
