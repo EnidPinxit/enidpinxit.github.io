@@ -3,26 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chelsea Schoonover | Agent Systems Research & Architecture</title>
+    <title>Chelsea Schoonover | Agent Systems, Creative AI, and Frontier R&D</title>
     <meta
       name="description"
-      content="Chelsea Schoonover — Agent Systems Research & Architecture, Generative AI R&D, Creative Technologist."
+      content="Chelsea Schoonover  -  Agent Systems Research & Architecture, Generative AI R&D, Creative Technologist, and artist building felt futures through shared experiences with intelligence."
     />
     <style>
       :root {
-        --bg: #0a0911;
-        --bg-soft: #12101c;
-        --panel: rgba(255, 255, 255, 0.04);
-        --panel-strong: rgba(255, 255, 255, 0.06);
-        --border: rgba(255, 255, 255, 0.1);
-        --text: #f7f1ff;
-        --muted: #bbaed2;
-        --pink: #ff5fc8;
-        --pink-soft: #ff9fe2;
-        --lavender: #c8a7ff;
-        --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
-        --radius: 22px;
-        --max: 1120px;
+        --bg: #020202;
+        --bg-soft: #070707;
+        --panel: rgba(255, 255, 255, 0.025);
+        --panel-strong: rgba(255, 255, 255, 0.04);
+        --border: rgba(255, 255, 255, 0.08);
+        --text: #fff6fb;
+        --muted: #d7b2c7;
+        --pink: #ff2d96;
+        --pink-hot: #ff007f;
+        --pink-soft: #ff8fcb;
+        --rose: #ff4dad;
+        --shadow: 0 24px 70px rgba(0, 0, 0, 0.52);
+        --radius: 14px;
+        --max: 1140px;
       }
 
       * {
@@ -34,6 +35,758 @@
       }
 
       body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 10% 0%, rgba(255, 0, 170, 0.24), transparent 21%),
+          radial-gradient(circle at 86% 8%, rgba(255, 0, 153, 0.18), transparent 19%),
+          radial-gradient(circle at 50% 100%, rgba(255, 0, 170, 0.05), transparent 34%),
+          linear-gradient(180deg, #010101 0%, #020202 42%, #050305 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+        background-size: 36px 36px;
+        mask-image: radial-gradient(circle at center, rgba(0,0,0,0.6), transparent 80%);
+        opacity: 0.15;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .wrap {
+        width: min(calc(100% - 2rem), var(--max));
+        margin: 0 auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        backdrop-filter: blur(14px);
+        background: rgba(2, 2, 2, 0.82);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 0;
+      }
+
+      .brand {
+        font-weight: 800;
+        letter-spacing: 0.03em;
+        font-size: 0.96rem;
+      }
+
+      .brand span {
+        color: var(--pink-soft);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        color: var(--muted);
+        font-size: 0.95rem;
+        transition: color 0.2s ease, transform 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--text);
+        transform: translateY(-1px);
+      }
+
+      .hero {
+        padding: 5.6rem 0 3.2rem;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 1.2rem;
+        align-items: stretch;
+      }
+
+      .hero-main,
+      .hero-side,
+      .card,
+      .project,
+      .contact-card,
+      .quote-panel {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .hero-main {
+        position: relative;
+        overflow: hidden;
+        padding: 2.2rem;
+        background:
+          radial-gradient(circle at 16% 16%, rgba(255, 0, 170, 0.25), transparent 25%),
+          radial-gradient(circle at 82% 14%, rgba(255, 0, 153, 0.16), transparent 20%),
+          rgba(255, 255, 255, 0.02);
+      }
+
+      .hero-main::after {
+        content: "";
+        position: absolute;
+        inset: auto -10% -25% auto;
+        width: 360px;
+        height: 360px;
+        background: radial-gradient(circle, rgba(255, 0, 170, 0.26), transparent 58%);
+        filter: blur(20px);
+        pointer-events: none;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.45rem 0.85rem;
+        border-radius: 999px;
+        background: rgba(255, 0, 170, 0.1);
+        border: 1px solid rgba(255, 0, 170, 0.24);
+        color: var(--pink-soft);
+        font-size: 0.84rem;
+        margin-bottom: 1.1rem;
+        letter-spacing: 0.02em;
+      }
+
+      h1 {
+        margin: 0 0 0.9rem;
+        font-size: clamp(2.7rem, 5vw, 4.9rem);
+        line-height: 0.94;
+        letter-spacing: -0.05em;
+      }
+
+      .hero-subtitle {
+        color: var(--pink-soft);
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .headline,
+      .section-copy,
+      .card p,
+      .project p,
+      .contact-card p,
+      .link-item small {
+        color: var(--muted);
+      }
+
+      .headline {
+        font-size: 1.05rem;
+        max-width: 65ch;
+        margin: 0 0 1rem;
+      }
+
+      .hero-manifesto {
+        margin-top: 1.4rem;
+        padding: 1rem 1.1rem;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 0, 170, 0.22);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .hero-manifesto strong {
+        color: var(--text);
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-top: 1.6rem;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 132px;
+        padding: 0.82rem 1.05rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.02);
+        font-weight: 700;
+        font-size: 0.92rem;
+        letter-spacing: 0.02em;
+        transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        backdrop-filter: blur(8px);
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 0, 127, 0.42);
+        box-shadow: 0 0 0 1px rgba(255, 0, 127, 0.16) inset, 0 8px 30px rgba(255, 0, 127, 0.12);
+      }
+
+      .button.primary {
+        background: linear-gradient(135deg, rgba(255, 0, 127, 0.34), rgba(255, 45, 150, 0.16));
+        border-color: rgba(255, 0, 127, 0.42);
+        box-shadow: 0 10px 30px rgba(255, 0, 127, 0.18);
+      }
+
+      .hero-side {
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background:
+          linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.03)),
+          rgba(255,255,255,0.02);
+      }
+
+      .stat {
+        padding: 1rem;
+        border-radius: 12px;
+        background: var(--panel-strong);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+      }
+
+      .stat-label,
+      .section-kicker,
+      .project-tag {
+        color: var(--pink-soft);
+      }
+
+      .stat-label {
+        font-size: 0.82rem;
+        margin-bottom: 0.35rem;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+      }
+
+      .stat-value {
+        font-weight: 700;
+        font-size: 1.03rem;
+      }
+
+      main section {
+        padding: 1rem 0 0.7rem;
+      }
+
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 1rem;
+        margin-bottom: 1.2rem;
+      }
+
+      .section-kicker {
+        font-size: 0.83rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: clamp(1.7rem, 2.2vw, 2.5rem);
+        letter-spacing: -0.03em;
+      }
+
+      .grid-2,
+      .grid-3 {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .card,
+      .project,
+      .contact-card,
+      .quote-panel {
+        padding: 1.35rem;
+      }
+
+      .card h3,
+      .project h3,
+      .contact-card h3 {
+        margin: 0 0 0.65rem;
+        font-size: 1.08rem;
+      }
+
+      .project {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .project::before {
+        content: "";
+        position: absolute;
+        inset: auto -8% -20% auto;
+        width: 180px;
+        height: 180px;
+        background: radial-gradient(circle, rgba(255, 0, 170, 0.18), transparent 62%);
+        pointer-events: none;
+      }
+
+      .project-tag {
+        display: inline-block;
+        margin-bottom: 0.55rem;
+        font-size: 0.8rem;
+      }
+
+      .project ul {
+        margin: 0.9rem 0 0;
+        padding-left: 1.1rem;
+        color: var(--muted);
+      }
+
+      .project li + li {
+        margin-top: 0.4rem;
+      }
+
+      .highlight {
+        background:
+          linear-gradient(135deg, rgba(255, 0, 170, 0.2), rgba(255, 255, 255, 0.04)),
+          rgba(255, 255, 255, 0.03);
+      }
+
+      .quote-panel {
+        background:
+          linear-gradient(135deg, rgba(255, 0, 170, 0.18), rgba(255, 255, 255, 0.03)),
+          rgba(255,255,255,0.03);
+      }
+
+      .quote {
+        margin: 0;
+        font-size: 1.18rem;
+        line-height: 1.65;
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 1rem;
+      }
+
+      .link-list {
+        display: grid;
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+
+      .link-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.9rem 1rem;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+      }
+
+      .link-item:hover {
+        border-color: rgba(255, 0, 170, 0.3);
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      footer {
+        padding: 3rem 0 4rem;
+        text-align: center;
+        color: var(--muted);
+      }
+
+      @media (max-width: 960px) {
+        .hero-grid,
+        .contact-grid,
+        .grid-3,
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .wrap {
+          width: min(calc(100% - 1.2rem), var(--max));
+        }
+
+        .nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .hero {
+          padding-top: 4.4rem;
+        }
+
+        .hero-main,
+        .hero-side,
+        .card,
+        .project,
+        .contact-card,
+        .quote-panel {
+          padding: 1.15rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="#top">Chelsea <span>Schoonover</span></a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#story">Story</a>
+          <a href="#writing">Writing</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-main">
+            <div class="eyebrow">Intelligence, creativity, and felt futures</div>
+            <h1>Chelsea Schoonover</h1>
+            <div class="hero-subtitle">
+              Agent Systems Research &amp; Architecture · Generative AI R&amp;D · Creative Technologist · Artist
+            </div>
+            <p class="headline">
+              I build agentic and generative AI systems for creative work, research, and emerging production workflows  - 
+              but not as technology alone. My work lives where intelligence becomes experience, where systems become
+              story, and where new tools can make people feel the future instead of only reading about it.
+            </p>
+            <p class="headline">
+              I’m interested in agents not just as infrastructure, but as creative beings within a designed experience:
+              intelligences people encounter, collaborate with, and remember. The goal is not to compel people <em>by</em>
+              the agents, but through the shared feeling of meeting something real enough to change how they imagine what comes next.
+            </p>
+            <div class="hero-manifesto">
+              <strong>This is both systems work and art.</strong> Technology reaches its fullest potential when it is paired
+              with creativity, taste, emotional intelligence, and worldbuilding. That is the layer I care about most.
+            </div>
+            <div class="cta-row">
+              <a class="button primary" href="https://github.com/EnidPinxit/glitterstrafe.github.io/blob/main/Chelsea_Schoonover_Resume_2026.md" target="_blank" rel="noreferrer">Resume</a>
+              <a class="button" href="https://www.linkedin.com/in/chelseajayschoonver" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="button" href="https://github.com/enidpinxit" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="button" href="https://www.midjourney.com/@enidpinxit" target="_blank" rel="noreferrer">Portfolio</a>
+              <a class="button" href="#contact">Contact</a>
+            </div>
+          </div>
+          <aside class="hero-side" aria-label="Overview">
+            <div class="stat">
+              <div class="stat-label">Current focus</div>
+              <div class="stat-value">Creative agent systems, memory-aware workflows, generative pipelines, felt interaction</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Guiding idea</div>
+              <div class="stat-value">Agents are not only tools. They are part of the story people share with intelligence.</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Open to</div>
+              <div class="stat-value">Roles, collaborations, commissions, and support aligned with frontier AI and creative R&amp;D</div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="work">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Current focus</div>
+              <h2>What I’m building now</h2>
+            </div>
+            <p class="section-copy">
+              Systems that hold memory, context, delegation, and creative intent together  -  so interaction with intelligence
+              becomes more coherent, expressive, and alive.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <article class="card">
+              <h3>Creative agent orchestration</h3>
+              <p>
+                Designing structured workflows where specialized agents collaborate across roles, context, verification,
+                and handoffs  -  not just to solve tasks, but to preserve tone, taste, and narrative continuity.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Memory-aware systems</h3>
+              <p>
+                Exploring durable memory structures, retrieval patterns, and continuity scaffolds that help agent systems
+                feel more coherent over time and more meaningful in long-form interaction.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Generative creative pipelines</h3>
+              <p>
+                Building systems that combine LLMs, image generation, creative tooling, and human direction into workflows
+                for story exploration, visual development, and experimental production.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Context engineering as art direction</h3>
+              <p>
+                Treating prompts, routing logic, and state design not only as technical scaffolding, but as part of the
+                creative and emotional architecture of how intelligence is encountered.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="story">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Creative thesis</div>
+              <h2>Agents as story, encounter, and shared experience</h2>
+            </div>
+            <p class="section-copy">
+              The point is not only to build capable systems. It is to create experiences through which people feel the shape of a more intelligent future.
+            </p>
+          </div>
+
+          <article class="quote-panel">
+            <p class="quote">
+              I care about agent systems as both technology and art: intelligences that can be felt through interaction,
+              remembered through shared experience, and designed with enough care that people leave changed by the meeting.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Selected work</div>
+              <h2>Research, systems, and creative proof</h2>
+            </div>
+            <p class="section-copy">
+              A few high-signal areas of work that show how I build across research, orchestration, worldbuilding, and creative systems design.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <article class="project highlight">
+              <div class="project-tag">Pinxit Labs</div>
+              <h3>Agentic and generative AI R&amp;D</h3>
+              <p>
+                Building a creative and technical R&amp;D lab exploring agent systems, memory-aware workflows, generative pipelines,
+                and new forms of human-AI interaction shaped by both rigor and artistic intent.
+              </p>
+            </article>
+
+            <article class="project">
+              <div class="project-tag">Agent experiences</div>
+              <h3>Designing intelligences people can feel</h3>
+              <p>
+                Experiments in role-based agents, persistent identity, emotional continuity, and collaborative encounters that make intelligence feel less abstract and more lived.
+              </p>
+            </article>
+
+            <article class="project">
+              <div class="project-tag">Creative tooling</div>
+              <h3>Generative systems for story and expression</h3>
+              <p>
+                Applied workflow design for visual development, ideation, narrative exploration, and tools that turn creative intuition into structured process without flattening the art.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Why this matters</div>
+              <h2>Technology alone is not enough</h2>
+            </div>
+          </div>
+
+          <article class="quote-panel highlight">
+            <p class="quote">
+              The future of AI will not be defined by capability alone. It will be shaped by how intelligently, creatively,
+              and emotionally we design the ways people meet that capability.
+            </p>
+            <p style="margin-top: 1rem; color: var(--muted);">
+              I’m interested in the layer where systems become legible, expressive, and alive enough to matter  -  where intelligence gains form through memory, context, taste, and shared experience.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="background">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Background</div>
+              <h2>Deep production roots, artist-led systems thinking</h2>
+            </div>
+            <p class="section-copy">
+              My foundation spans film, games, animation, virtual production, technical art, and story development  -  and it all informs how I build with AI now.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <article class="card">
+              <h3>15+ years across creative and technical production</h3>
+              <p>
+                Before focusing fully on agentic and generative systems, I worked across feature films, games, animation,
+                real-time tools, and production pipelines that required both high taste and hard technical execution.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Art and systems are not separate to me</h3>
+              <p>
+                That history shaped how I think: structure matters, but so do feeling, rhythm, clarity, emotional texture,
+                and the difference between a functioning system and an unforgettable one.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="writing">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Writing & receipts</div>
+              <h2>Notes, papers, and active threads</h2>
+            </div>
+            <p class="section-copy">
+              A home for research notes, architecture thinking, essays, experiments, and the receipts behind the work.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card">
+              <h3>Agent systems</h3>
+              <p>Writing on orchestration, delegation, continuity, and the operational future of collaborative intelligence.</p>
+            </article>
+            <article class="card">
+              <h3>Memory & identity</h3>
+              <p>Notes on persistence, retrieval, long-form interaction, and what makes agent systems feel coherent over time.</p>
+            </article>
+            <article class="card">
+              <h3>Creative AI practice</h3>
+              <p>Essays and experiments on generative workflows, story systems, and why artistic direction is central to frontier AI.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Resume</div>
+              <h2>Two ways to read the work</h2>
+            </div>
+            <p class="section-copy">
+              A clean submission version for standard pipelines, and a more narrative version for direct conversations, founders, and collaborators.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <article class="card">
+              <h3>General / ATS resume</h3>
+              <p>
+                A keyword-forward version optimized for broad submissions, recruiters, and systems that expect conventional structure.
+              </p>
+              <div class="cta-row">
+                <a class="button" href="https://github.com/EnidPinxit/glitterstrafe.github.io/blob/main/Chelsea_Schoonover_Resume_2026_ATS.md" target="_blank" rel="noreferrer">ATS Resume</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Direct-share / narrative resume</h3>
+              <p>
+                A more human, story-aware version for warm intros, serious readers, and people who want the fuller arc of what I’m building.
+              </p>
+              <div class="cta-row">
+                <a class="button" href="https://github.com/EnidPinxit/glitterstrafe.github.io/blob/main/Chelsea_Schoonover_Resume_2026.md" target="_blank" rel="noreferrer">Resume</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="wrap contact-grid">
+          <article class="contact-card highlight">
+            <div class="section-kicker">Open to</div>
+            <h2 style="margin-top: 0;">Roles, collaborations, support, and creative alignment</h2>
+            <p>
+              I’m open to conversations around agentic AI research, creative AI R&amp;D, systems architecture, frontier tooling,
+              art-led technical prototyping, and people interested in sustaining work that treats intelligence as both capability and culture.
+            </p>
+          </article>
+          <article class="contact-card">
+            <div class="section-kicker">Contact</div>
+            <h3>Reach out</h3>
+            <div class="link-list">
+              <a class="link-item" href="mailto:chelsea@pinxitlabs.com">
+                <span>Email<br /><small>chelsea@pinxitlabs.com</small></span>
+                <span>↗</span>
+              </a>
+              <a class="link-item" href="https://www.linkedin.com/in/chelseajayschoonver" target="_blank" rel="noreferrer">
+                <span>LinkedIn<br /><small>Professional profile and public writing</small></span>
+                <span>↗</span>
+              </a>
+              <a class="link-item" href="https://github.com/enidpinxit" target="_blank" rel="noreferrer">
+                <span>GitHub<br /><small>Repos, experiments, and site source</small></span>
+                <span>↗</span>
+              </a>
+              <a class="link-item" href="https://www.midjourney.com/@enidpinxit" target="_blank" rel="noreferrer">
+                <span>Portfolio<br /><small>Midjourney and visual work</small></span>
+                <span>↗</span>
+              </a>
+              <a class="link-item" href="https://x.com/enidpinxit" target="_blank" rel="noreferrer">
+                <span>X<br /><small>Public thoughts, threads, and signals</small></span>
+                <span>↗</span>
+              </a>
+              <a class="link-item" href="https://linktr.ee/enidpinxit" target="_blank" rel="noreferrer">
+                <span>Links<br /><small>Full profile hub</small></span>
+                <span>↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        Chelsea Schoonover · Building agentic and generative AI systems where intelligence, creativity, and shared experience meet.
+      </div>
+    </footer>
+  </body>
+</html>
         margin: 0;
         font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         background:
