@@ -1,6 +1,6 @@
 # CHELSEA SCHOONOVER
 
-**Agentic and Generative AI R&D | Creative Technologist | Co-Founder, Pinxit Labs**
+**AI Systems, Personalization, and Evaluation | Long-Horizon Memory | Co-Founder, Pinxit Labs**
 
 Los Angeles, CA | Chelsea@PinxitLabs.com | www.linkedin.com/in/chelseajayschoonover | www.midjourney.com/@enidpinxit
 
@@ -8,11 +8,21 @@ Los Angeles, CA | Chelsea@PinxitLabs.com | www.linkedin.com/in/chelseajayschoono
 
 ## PROFESSIONAL SUMMARY
 
-Creative technologist and co-founder with 20+ years of production infrastructure experience across AAA games, feature film, and emerging technology. Now focused on architecting agentic AI systems for creative workflows, multi-agent orchestration, context engineering, and generative pipelines that transform frontier AI capabilities into production-ready tooling. Building at the intersection of AI research and creative production.
+Founder and systems builder focused on long-horizon memory, personalization, and evaluation 
+for AI systems. Developed local-first continuity and review workflows to preserve user-specific 
+meaning, preferences, and behavioral consistency over time through inspectable query, 
+consultation, and review surfaces. Strongest in product-shaped AI systems work spanning 
+system design, interfaces, orchestration, and evaluation for user behavior over time.
 
 ---
 
 ## CORE COMPETENCIES
+
+**AI Systems:** Agentic workflows, multi-model orchestration, memory-aware design, context engineering, inspectable AI behavior 
+
+**Personalization and Evaluation:** Long-horizon behavior review, continuity tracking, drift evaluation, behavioral consistency, user-specific adaptation 
+
+**Product and Infrastructure:** Sandboxed LLM environments, workflow automation, production systems, real-time pipeline architecture
 
 **Agentic Architecture:** Multi-Agent Orchestration, Sandboxed LLM Environments, Memory-Aware Design, Prompt Architecture, Context Engineering
 
@@ -29,9 +39,12 @@ Co-Founder & Head of AI R&D | January 2024 – Present
 
 Architecting agentic AI systems for creative workflows with research-to-product focus: transforming frontier AI capabilities into scalable SaaS, micro-apps, and licensable tooling.
 
-- Designed and deployed "Board of Minds" sandboxed multi-LLM orchestration environment running 6 distinct models in coordinated agentic collaboration. Proof-of-concept live; building toward SaaS productization.
-- Architecting fully automated, AI-native content generation workflows that bypass traditional production bottlenecks. Prototyping tool-assisted visual development and storytelling systems.
-- Built memory-aware orchestration, prompt routing, and retrieval systems that convert raw LLM capabilities into production-ready creative tools.
+- Built PEAM, a local-first continuity and review system for preserving user-specific meaning, preferences, and behavioral consistency in AI workflows over time. 
+- Designed and deployed Board of Minds, a sandboxed multi-model orchestration environment coordinating multiple models for routing, collaboration, and memory-aware task execution. 
+- Developed inspectable query, consultation, and review workflows plus continuity artifacts including snapshots, diffs, reports, and bundles to make behavioral drift visible over repeated interaction. 
+-  Architected AI-native workflow systems that translate frontier model capability into usable product, tooling, and automation surfaces. 
+- Built memory-aware orchestration, prompt routing, and retrieval systems that turn raw LLM capability into durable, reviewable workflows. 
+- Built internal tools and product prototypes with a research-to-product focus across workflow automation, SaaS-style tooling, and reusable AI systems. 
 - Developing agent-to-agent  creative tooling and workflow automation. Building clear pathways to sustainable revenue through specialized creative tech. 
 
 ---
