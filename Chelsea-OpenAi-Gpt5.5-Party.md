@@ -4,7 +4,8 @@
 
 Long-horizon memory · Creative AI workflows · Human-AI continuity systems
 
-I am a creative technologist crafting meaningful stories and I build creative and agentic AI systems that help people work with models over time: memory, identity scaffolds, visual workflows, reflective agents, and human-AI collaboration loops.
+I'm a creative technologist who builds agentic AI systems for working with models over time — memory, identity scaffolds, visual workflows, reflective agents, and human-AI collaboration loops. 
+I come from many years in real-time virtual production for feature film and video games, and now craft visual stories across generative image, video, and cinematic pipelines.
 
 My work bridges practical creative tooling, visual AI practice, agentic architecture, and long-horizon personalization systems.
 
@@ -69,9 +70,6 @@ Better context is useful. But long-horizon collaboration needs more than context
 - AI-native storytelling and cinematic development
 - Tools that preserve taste, authorship, and intent
 
-## Quick Version 
-
-I am a Creative Technologist and AI artist building continuity-preserving AI systems for memory, creative workflows, and human-AI collaboration over time.
 
 ## Links
 
