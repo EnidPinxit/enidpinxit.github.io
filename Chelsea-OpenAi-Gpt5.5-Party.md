@@ -1,4 +1,5 @@
 # Chelsea Schoonover / Enid Pinxit
+
 **Creative Technologist · AI Artist · Agentic Systems Builder**
 Long-horizon memory · Creative AI workflows · Human-AI continuity systems
 
