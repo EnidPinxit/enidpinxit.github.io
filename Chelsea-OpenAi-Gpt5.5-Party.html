@@ -321,6 +321,327 @@
       <a href="https://enidpinxit.github.io" class="link-btn">
         <span class="link-icon">✦</span> Portfolio
       </a>
+            <a href="https://www.midjourney.com/@enidpinxit" class="link-btn">
+        <span class="link-icon">✦</span> Generative Art
+      </a>
+      <a href="https://github.com/EnidPinxit" class="link-btn">
+        <span class="link-icon">⌥</span> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/chelseajayschoonover" class="link-btn">
+        <span class="link-icon">◈</span> LinkedIn
+      </a>
+      <a href="https://enidpinxit.substack.com" class="link-btn">
+        <span class="link-icon">◇</span> Substack
+      </a>
+      <a href="https://zenodo.org/records/19449117" class="link-btn">
+        <span class="link-icon">▸</span> Dyadic Alignment Whitepaper
+      </a>
+      <a href="mailto:chelsea@pinxitlabs.com" class="link-btn">
+        <span class="link-icon">✧</span> chelsea@pinxitlabs.com
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Happy to talk agents, memory, workflows, creative tooling, visual systems, and AI product direction.</p>
+  </div>
+
+  <div class="save-hint">
+    <span>scan · save · connect</span>
+  </div>
+
+</div>
+
+</body>
+</html>
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(ellipse, rgba(212,135,154,0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 28px 20px 48px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    text-align: center;
+    padding: 16px 0 28px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+
+  .hero .alt-name {
+    font-size: 0.9rem;
+    color: var(--pink);
+    font-weight: 400;
+    margin-bottom: 12px;
+    letter-spacing: 0.03em;
+  }
+
+  .hero .tagline {
+    font-size: 0.82rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* ── Section cards ── */
+  .section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 16px;
+    margin-bottom: 14px;
+    backdrop-filter: blur(8px);
+  }
+
+  .section-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--pink-soft);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  /* ── About ── */
+  .about p {
+    font-size: 0.92rem;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .about p:last-child { margin-bottom: 0; }
+
+  /* ── Thesis ── */
+  .thesis blockquote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: #fff;
+    border-left: 2px solid var(--pink);
+    padding-left: 14px;
+    margin: 0;
+  }
+
+  /* ── Focus grid ── */
+  .focus-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .focus-tag {
+    font-size: 0.72rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    background: rgba(255,255,255,0.02);
+    white-space: nowrap;
+  }
+
+  /* ── Projects ── */
+  .project {
+    margin-bottom: 12px;
+  }
+  .project:last-child { margin-bottom: 0; }
+  .project-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+  .project-desc {
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* ── Talk topics ── */
+  .talk-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .talk-chip {
+    font-size: 0.7rem;
+    padding: 4px 9px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.03);
+    color: var(--muted);
+    border: 1px solid rgba(255,255,255,0.04);
+  }
+
+  /* ── Links ── */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .link-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background 0.2s, border-color 0.2s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .link-btn:active {
+    background: rgba(255,255,255,0.06);
+    border-color: var(--pink-soft);
+  }
+  .link-icon {
+    font-size: 1rem;
+    opacity: 0.7;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    padding-top: 18px;
+    margin-top: 8px;
+  }
+  .footer p {
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  /* ── Save hint ── */
+  .save-hint {
+    text-align: center;
+    padding: 6px 0 0;
+  }
+  .save-hint span {
+    font-size: 0.65rem;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Animations ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .section { animation: fadeUp 0.5s ease-out both; }
+  .section:nth-child(2) { animation-delay: 0.08s; }
+  .section:nth-child(3) { animation-delay: 0.14s; }
+  .section:nth-child(4) { animation-delay: 0.20s; }
+  .section:nth-child(5) { animation-delay: 0.26s; }
+  .section:nth-child(6) { animation-delay: 0.32s; }
+  .section:nth-child(7) { animation-delay: 0.38s; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Chelsea Schoonover</h1>
+    <div class="alt-name">Enid Pinxit</div>
+    <div class="tagline">Creative Technologist · AI Artist · Agentic Systems Builder</div>
+  </div>
+
+  <!-- About -->
+  <div class="section about">
+    <div class="section-label">About</div>
+    <p>I build agentic AI systems for working with models over time — memory, identity scaffolds, visual workflows, reflective agents, and human-AI collaboration loops.</p>
+    <p>I come from many years in real-time virtual production for feature film and video games, and now craft visual stories across generative image, video, and cinematic pipelines.</p>
+  </div>
+
+  <!-- Thesis -->
+  <div class="section">
+    <div class="section-label">Thesis</div>
+    <div class="thesis">
+      <blockquote>Memory is not just retrieval. Memory is continuity.</blockquote>
+    </div>
+  </div>
+
+  <!-- Current Work -->
+  <div class="section">
+    <div class="section-label">Current Work</div>
+
+    <div class="project">
+      <div class="project-name">PEAM</div>
+      <div class="project-desc">Pinxit Entanglement Attunement Matrix — a local-first continuity system for agentic memory, meaning extraction, and profile-local attunement.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Dyadic Alignment</div>
+      <div class="project-desc">Alignment as an ongoing relationship across memory, feedback, trust, consent, and continuity — not a one-time configuration.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Cornerstone / Lane Harness</div>
+      <div class="project-desc">A lane-based harness for routing LLMs, agents, files, memory, weights, and workflow state — inspectable, modular, continuity-aware.</div>
+    </div>
+
+    <div class="project" style="margin-top:10px;">
+      <div class="project-name">AI Visual Practice</div>
+      <div class="project-desc">Creative direction across Midjourney, ComfyUI, ComfyCloud, and cinematic pipelines — focused on authorship, style consistency, and character continuity.</div>
+    </div>
+  </div>
+
+  <!-- Focus -->
+  <div class="section">
+    <div class="section-label">Focus Areas</div>
+    <div class="focus-grid">
+      <span class="focus-tag">Creative Tech</span>
+      <span class="focus-tag">Agentic Systems</span>
+      <span class="focus-tag">Long-Horizon Memory</span>
+      <span class="focus-tag">Human-AI Collab</span>
+      <span class="focus-tag">Identity & Continuity</span>
+      <span class="focus-tag">ComfyUI</span>
+      <span class="focus-tag">Midjourney</span>
+      <span class="focus-tag">Cinematic AI</span>
+    </div>
+  </div>
+
+  <!-- Talk -->
+  <div class="section">
+    <div class="section-label">I Love Talking About</div>
+    <div class="talk-list">
+      <span class="talk-chip">Creative AI workflows</span>
+      <span class="talk-chip">Agentic systems</span>
+      <span class="talk-chip">Long-horizon memory</span>
+      <span class="talk-chip">Personalization & continuity</span>
+      <span class="talk-chip">Alignment as relationship</span>
+      <span class="talk-chip">ComfyUI pipelines</span>
+      <span class="talk-chip">AI-native storytelling</span>
+      <span class="talk-chip">Tools for taste & authorship</span>
+    </div>
+  </div>
+
+  <!-- Links -->
+  <div class="section">
+    <div class="section-label">Connect</div>
+    <div class="links">
+      <a href="https://enidpinxit.github.io" class="link-btn">
+        <span class="link-icon">✦</span> Portfolio
+      </a>
       <a href="https://www.midjourney.com/@enidpinxit" class="link-btn">
         <span class="link-icon">✦</span> Generative Art
       </a>
