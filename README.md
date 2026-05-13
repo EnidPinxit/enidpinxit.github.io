@@ -28,4 +28,6 @@ I build agentic AI systems for creative workflows, multi-agent orchestration, co
 
 ---
 
-*Last updated: March 2026*
+*Last updated: May 2026*
+
+[I currently represent only myself and my own work unless a specific written agreement states otherwise.](REPRESENTATION-STATEMENT.md)
